@@ -118,7 +118,7 @@ The cleaned dataset was used to build an interactive dashboard focused on identi
 
 ## 📂 Project Structure
 
-├── figures/ # Screenshots (EDA, cleaning, dashboard)
+├── figures/ (Screenshots of EDA, cleaning, dashboard)
 
 ├── sql/ (SQL queries for cleaning and validation)
 

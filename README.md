@@ -4,7 +4,7 @@
 
 This project analyzes student academic performance using an end-to-end data workflow, including data cleaning, validation, and visualization.
 
-Raw data was processed and cleaned using SQL to ensure data quality before building an interactive dashboard in Power BI.
+Messy data was processed and cleaned using SQL to ensure data quality before building an interactive dashboard in Power BI.
 
 ---
 
@@ -33,15 +33,23 @@ The dataset includes:
 
 ## 🧹 Data Cleaning & Validation (SQL)
 
-Before visualization, the dataset required preprocessing due to real-world data quality issues.
+Before visualization, the dataset required preprocessing due to quality issues.
 
 ### 🔹 Key Issues Found
 
 - Non-numeric values in numeric fields  
 - Empty values causing import errors  
-- Inconsistent categorical labels (e.g., duplicates due to casing such as "Near" vs "near")  
-- Outliers (e.g., scores outside expected range)  
+- Inconsistent categorical labels (e.g., duplicates due to casing such as "Near" vs "near")
+
+<img width="823" height="385" alt="eda2" src="https://github.com/user-attachments/assets/dc92bff7-a1c8-41d7-a325-5062ff2663ac" />
+
+- Outliers (e.g., scores outside expected range)
+
+<img width="1181" height="811" alt="eda" src="https://github.com/user-attachments/assets/af790d1c-c3e9-4f21-a1c2-0d88216e90b4" />
+
 - NULL values in categorical variables  
+
+> 📸 See `/sql/` and `/figures/` folders for queries and more screenshots.
 
 ---
 
@@ -53,11 +61,16 @@ Before visualization, the dataset required preprocessing due to real-world data 
 - Identified and corrected outliers  
 - Ensured consistency across all variables  
 
-> 📸 See `/sql/` and `/figures/` folders for queries and validation screenshots.
+<img width="1102" height="772" alt="validation" src="https://github.com/user-attachments/assets/3afa6384-d1a7-47d6-8087-644b1b0b4943" />
+
+<img width="644" height="396" alt="validation2" src="https://github.com/user-attachments/assets/40b6f1c3-5898-49a5-933b-2a1ac7301855" />
+
 
 ---
 
 ## 📊 Dashboard (Power BI)
+
+<img width="1279" height="721" alt="dashboard" src="https://github.com/user-attachments/assets/e29596f0-7b6e-41c2-a0e1-a43cbaf0e106" />
 
 The cleaned dataset was used to build an interactive dashboard focused on identifying key performance drivers.
 
@@ -78,7 +91,7 @@ The cleaned dataset was used to build an interactive dashboard focused on identi
   Shows a clear positive relationship between study time and performance  
 
 - **Sleep vs Academic Performance**  
-  Shows no strong evidence of a positive relationship  
+  Shows a slight negative relationship with exam scores 
 
 - **Attendance vs Exam Score**  
   Indicates a moderate impact on performance  
@@ -103,7 +116,7 @@ The cleaned dataset was used to build an interactive dashboard focused on identi
 
 - Attendance has a moderate impact on performance; higher attendance levels are associated with slightly better scores, but the effect is not strong.
 
-- Sleep duration shows no strong evidence of a positive relationship with exam performance in this dataset.
+- Sleep duration shows a slight negative relationship with exam performance, suggesting that higher sleep hours are weakly associated with lower scores in this dataset.
 
 - The distribution of scores indicates a low proportion of high performers (>75), suggesting overall moderate academic performance across students.
 

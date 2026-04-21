@@ -119,11 +119,17 @@ The cleaned dataset was used to build an interactive dashboard focused on identi
 ## 📂 Project Structure
 
 ├── figures/ # Screenshots (EDA, cleaning, dashboard)
+
 ├── sql/ # SQL queries for cleaning and validation
+
 ├── dashboard.pbix # Power BI dashboard
+
 ├── StudentPerformanceFactors.csv
+
 ├── students_clean_table.csv
+
 └── README.md
+
 
 
 ---

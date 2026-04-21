@@ -1,0 +1,22 @@
+CREATE TABLE students_raw (
+    hours_studied TEXT,
+    attendance TEXT,
+    parental_involvement TEXT,
+    access_to_resources TEXT,
+    extracurricular_activities TEXT,
+    sleep_hours TEXT,
+    previous_scores TEXT,
+    motivation_level TEXT,
+    internet_access TEXT,
+    tutoring_sessions TEXT,
+    family_income TEXT,
+    teacher_quality TEXT,
+    school_type TEXT,
+    peer_influence TEXT,
+    physical_activity TEXT,
+    learning_disabilities TEXT,
+    parental_education_level TEXT,
+    distance_from_home TEXT,
+    gender TEXT,
+    exam_score TEXT
+);
